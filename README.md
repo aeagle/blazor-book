@@ -2,6 +2,8 @@
 
 A Storybook like UI for hosting Blazor components
 
+<img src="https://www.allaneagle.com/blazorbook.gif" width="100%" />
+
 ## Installation
 
 The `BlazorBook` nuget package needs to be added to your Blazor WASM/Server app and your Razor Class library project containing your individual stories.
