@@ -18,7 +18,7 @@ In the startup of your Blazor WASM/Server app:
 
 The stories will be registered and the UI available on the path `/blazorbook`
 
-## Stories
+## Stories 
 
 Create a Razor Class Library to contain your stories.
 
