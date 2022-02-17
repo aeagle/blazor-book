@@ -4,7 +4,9 @@ A Storybook like UI for hosting Blazor components
 
 ## Installation
 
-`Install-Package Elmah -ProjectName MyProject`
+The `BlazorBook` nuget package needs to be added to your Blazor WASM/Server app and your Razor Class library project containing your individual stories.
+
+`Install-Package BlazorBook -ProjectName MyProject`
 
 ## Setup
 
