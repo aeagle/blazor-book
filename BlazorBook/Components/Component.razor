@@ -1,0 +1,14 @@
+@page "/blazorbook/story/{id}"
+
+@renderWidget(BlazorBook.Stories.MetadataByName(Id))
+
+@code {
+    [Parameter]
+    public string Id { get; set; }
+
+    private RenderFragment renderWidget(ComponentMetadata metadata) => builder =>
+    {
+        builder.OpenComponent(0, metadata.Type);
+        builder.CloseComponent();
+    };
+}

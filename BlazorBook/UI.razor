@@ -1,0 +1,21 @@
+﻿@page "/blazorbook"
+
+<ViewPort class="storybook">
+    <CascadingValue Value="@((Func<string, Task>)SetCurrentStory)" Name="SetCurrentStory">
+        <CascadingValue Value="@CurrentStory" Name="CurrentStory">
+            <Sidebar currentStory="@CurrentStory" />
+            <MainPane />
+        </CascadingValue>
+    </CascadingValue>
+</ViewPort>
+
+@code {
+    string CurrentStory { get; set; } = BlazorBook.Stories.GetAll().FirstOrDefault()?.Slug;
+
+    private Task SetCurrentStory(string component)
+    {
+        CurrentStory = component;
+        StateHasChanged();
+        return Task.CompletedTask;
+    }
+}

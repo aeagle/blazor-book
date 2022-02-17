@@ -1,0 +1,111 @@
+﻿.storybook {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14.4px;
+  background: #f6f9fc;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-osx-font-smoothing: grayscale;
+}
+.storybook .main-pane {
+  background-color: white;
+}
+.storybook .main-pane .top-bar {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px -1px 0px 0px;
+}
+.storybook .main-pane .top-bar ul {
+  list-style: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  white-space: nowrap;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+.storybook .main-pane .top-bar ul li {
+  display: inline-block;
+}
+.storybook .main-pane .top-bar ul li a {
+  cursor: pointer;
+  color: #999999;
+  box-sizing: border-box;
+  white-space: normal;
+  display: inline-flex;
+  overflow: hidden;
+  vertical-align: top;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  padding: 0px 15px;
+  text-transform: capitalize;
+  transition: color 0.2s linear 0s, border-bottom-color 0.2s linear 0s;
+  height: 40px;
+  line-height: 12px;
+  background: transparent;
+  border-width: 3px 0px;
+  border-style: solid;
+  border-color: transparent;
+  border-image: initial;
+  font-weight: bold;
+  font-size: 13px;
+  user-select: none;
+}
+.storybook .main-pane .top-bar ul li.active a {
+  color: #1ea7fd;
+  border-bottom: 3px solid #1ea7fd;
+}
+.storybook .sidebar {
+  background-image: linear-gradient(180deg, #052767 0%, #3a0647 70%);
+  color: white;
+}
+.storybook .sidebar .header {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 8px 16px 8px 24px;
+  line-height: 26.4px;
+  font-size: 17.6px;
+  user-select: none;
+}
+.storybook .sidebar .search-bar {
+  padding: 0 20px;
+}
+.storybook .sidebar .component-list h2 {
+  font-family: "Nunito Sans", sans-serif;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 11px;
+  line-height: 24px;
+  color: white;
+  margin: 10px 24px 0 24px;
+  padding: 0;
+}
+.storybook .sidebar .component-list ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.storybook .sidebar .component-list ul li {
+  padding: 8px 0.5rem 0 0.5rem;
+}
+.storybook .sidebar .component-list ul li a {
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  color: white;
+  padding: 0 16px;
+  height: 36px;
+  line-height: 36px;
+}
+.storybook .sidebar .component-list ul li a:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.storybook .sidebar .component-list ul li.active a {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
