@@ -2,7 +2,7 @@
 
 A Storybook like UI for hosting Blazor components
 
-<img src="https://www.allaneagle.com/blazorbook.gif" width="100%" />
+<img src="https://www.allaneagle.com/blazorbook.gif?v=1" width="100%" />
 
 ## Installation
 
