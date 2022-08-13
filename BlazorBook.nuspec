@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>BlazorBook</id>
+    <title xmlns="">BlazorBook</title>
+    <authors>Allan Eagle</authors>
+    <owners>Allan Eagle</owners>
+    <projectUrl>https://github.com/aeagle/blazor-book</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Storybook like functionality for Blazor.NET to display Blazor components in a UI</description>
+    <tags>Blazor .NET Storybook</tags>
+    <version>0.0.1-beta.1</version>
+    <dependencies>
+		<group targetFramework="net6.0">
+          <dependency id="BlazorSpaces" version="0.0.1-beta.2" />
+          <dependency id="Microsoft.AspNetCore.Components.Web" version="6.0.2" />
+          <dependency id="Microsoft.AspNetCore.Components.WebAssembly" version="6.0.2" />
+          <dependency id="Microsoft.AspNetCore.Http.Abstractions" version="2.2.0" />
+          <dependency id="Newtonsoft.Json" version="13.0.1" />
+          <dependency id="System.Net.Http.Json" version="6.0.0" />
+		</group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="BlazorBook\bin\Debug\net6.0\BlazorBook.deps.json" target="lib\net6.0" />
+    <file src="BlazorBook\bin\Debug\net6.0\BlazorBook.dll" target="lib\net6.0" />
+    <file src="BlazorBook\bin\Debug\net6.0\BlazorBook.pdb" target="lib\net6.0" />
+  </files>
+</package>

@@ -5,6 +5,12 @@ VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorBook", "BlazorBook\BlazorBook.csproj", "{29821E1D-F8CC-4A3E-8E15-B1184A2F1EAC}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{02B7CF36-00DC-42A0-BBAC-FFC328C8AE91}"
+	ProjectSection(SolutionItems) = preProject
+		BlazorBook.nuspec = BlazorBook.nuspec
+		nuget.config = nuget.config
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
