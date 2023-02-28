@@ -1,0 +1,125 @@
+.spaces-centered-vertically {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.spaces-centered {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.spaces-clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.spaces-fixedsize-layout {
+  overflow: hidden;
+  position: relative;
+}
+
+.spaces-fullpage-layout {
+  position: fixed;
+  overflow: hidden;
+}
+
+.spaces-space {
+    overflow: hidden;
+    touch-action: none;
+    box-sizing: border-box;
+
+    .spaces-space-inner {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        box-sizing: border-box;
+    }
+
+    &.scrollable .spaces-space-inner {
+        overflow: auto;
+        touch-action: auto;
+    }
+
+    &.spaces-resizing {
+        user-select: none !important;
+
+        .spaces-space {
+            transition: none !important;
+        }
+
+        iframe {
+            pointer-events: none !important;
+        }
+    }
+
+    .spaces-resize-handle {
+        position: absolute;
+        z-index: 9999;
+        background: transparent;
+
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 2;
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            z-index: 1;
+        }
+
+        &.resize-left {
+            top: 0;
+            bottom: 0;
+
+            &:before {
+                cursor: w-resize;
+            }
+        }
+
+        &.resize-right {
+            top: 0;
+            bottom: 0;
+
+            &:before {
+                cursor: e-resize;
+            }
+        }
+
+        &.resize-top {
+            left: 0;
+            right: 0;
+
+            &:before {
+                cursor: n-resize;
+            }
+        }
+
+        &.resize-bottom {
+            left: 0;
+            right: 0;
+
+            &:before {
+                cursor: s-resize;
+            }
+        }
+    }
+
+    .spaces-touch-handle {
+        position: absolute;
+        z-index: 9998;
+        pointer-events: all;
+        background: transparent;
+    }
+}
