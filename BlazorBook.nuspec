@@ -9,7 +9,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Storybook like functionality for Blazor.NET to display Blazor components in a UI</description>
     <tags>Blazor .NET Storybook</tags>
-    <version>0.0.1-beta.1</version>
+    <version>0.0.1-beta.2</version>
     <dependencies>
 		<group targetFramework="net6.0">
           <dependency id="BlazorSpaces" version="0.0.1-beta.2" />
