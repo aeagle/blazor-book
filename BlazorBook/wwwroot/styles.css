@@ -10,12 +10,14 @@
   background-color: white;
 }
 .storybook .main-pane .top-bar {
+  background-color: #052767;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: rgba(0, 0, 0, 0.1) 0px -1px 0px 0px;
 }
 .storybook .main-pane .top-bar ul {
+  background-color: rgba(0, 0, 0, 0.4);
   list-style: none;
-  display: inline-block;
+  display: block;
   margin: 0;
   padding: 0;
   display: flex;
@@ -27,7 +29,7 @@
 }
 .storybook .main-pane .top-bar ul li a {
   cursor: pointer;
-  color: #999999;
+  color: white;
   box-sizing: border-box;
   white-space: normal;
   display: inline-flex;
@@ -54,8 +56,8 @@
   user-select: none;
 }
 .storybook .main-pane .top-bar ul li.active a {
-  color: #1ea7fd;
-  border-bottom: 3px solid #1ea7fd;
+  color: white;
+  border-bottom: 3px solid #3a0647;
 }
 .storybook .sidebar {
   background-image: linear-gradient(180deg, #052767 0%, #3a0647 70%);
@@ -76,7 +78,7 @@
   text-transform: uppercase;
   font-weight: 500;
   font-size: 11px;
-  line-height: 24px;
+  line-height: 20px;
   color: white;
   margin: 10px 24px 5px 24px;
   padding: 0;

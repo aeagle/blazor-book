@@ -4,18 +4,20 @@
     background: rgb(246, 249, 252);
     -webkit-font-smoothing: antialiased;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    -moz-osx-font-smoothing: grayscale; 
+    -moz-osx-font-smoothing: grayscale;
 
     .main-pane {
         background-color: white;
 
         .top-bar {
+            background-color: rgb(5, 39, 103);
             border-bottom: 1px solid rgba(0, 0, 0, 0.1);
             box-shadow: rgba(0, 0, 0, 0.1) 0px -1px 0px 0px;
 
             ul {
+                background-color: rgba(0,0,0,0.4);
                 list-style: none;
-                display: inline-block;
+                display: block;
                 margin: 0;
                 padding: 0;
                 display: flex;
@@ -27,7 +29,7 @@
 
                     a {
                         cursor: pointer;
-                        color: rgb(153, 153, 153);
+                        color: white;
                         box-sizing: border-box;
                         white-space: normal;
                         display: inline-flex;
@@ -56,8 +58,8 @@
 
                     &.active {
                         a {
-                            color: rgb(30, 167, 253);
-                            border-bottom: 3px solid rgb(30, 167, 253);
+                            color: white;
+                            border-bottom: 3px solid #3a0647;
                         }
                     }
                 }
@@ -87,7 +89,7 @@
                 text-transform: uppercase;
                 font-weight: 500;
                 font-size: 11px;
-                line-height: 24px;
+                line-height: 20px;
                 color: white;
                 margin: 10px 24px 5px 24px;
                 padding: 0;
