@@ -2,28 +2,10 @@
     <Top class="header" size="40px" order="@(1)">
         BlazorBook
     </Top>
-    @* <Top class="search-bar" size="40px" order="@(2)">
-        Search
-        </Top> *@
-    <Fill class="component-list" scrollable="@true">
-        <h2>Components</h2>
-        <ul>
-            @foreach (var component in BlazorBook.Stories.GetAll())
-            {
-                <li class="@classList(component.Slug)">
-                    <a @onclick="@(() => SetCurrentStory(component.Slug))">@component.Name</a>
-                </li>
-            }
-        </ul>
-    </Fill>
+    <ComponentList CurrentStory="@CurrentStory" />
 </LeftResizable>
 
 @code {
-    string classList(string component) => CurrentStory == component ? "active" : "";
-
     [Parameter]
     public string CurrentStory { get; set; }
-
-    [CascadingParameter(Name = "SetCurrentStory")]
-    Func<string, Task> SetCurrentStory { get; set; }
 }

@@ -79,7 +79,7 @@
   font-size: 11px;
   line-height: 24px;
   color: white;
-  margin: 10px 24px 0 24px;
+  margin: 10px 24px 5px 24px;
   padding: 0;
 }
 .storybook .sidebar .component-list ul {
@@ -90,18 +90,22 @@
 .storybook .sidebar .component-list ul li {
   padding: 8px 0.5rem 0 0.5rem;
 }
-.storybook .sidebar .component-list ul li a {
+.storybook .sidebar .component-list ul li button {
+  text-align: left;
+  display: block;
+  width: 100%;
   border-radius: 4px;
-  display: flex;
   align-items: center;
   cursor: pointer;
   user-select: none;
   color: white;
-  padding: 0 16px;
-  height: 36px;
-  line-height: 36px;
+  padding: 2px 16px;
+  line-height: 25px;
+  background: transparent;
+  border: none;
+  margin: 0;
 }
-.storybook .sidebar .component-list ul li a:hover {
+.storybook .sidebar .component-list ul li button:hover {
   color: white;
   background-color: rgba(255, 255, 255, 0.1);
 }
