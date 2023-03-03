@@ -72,10 +72,9 @@
   padding: 0 20px;
 }
 .storybook .sidebar .component-list h2 {
-  font-family: "Nunito Sans", sans-serif;
   letter-spacing: 0.35em;
   text-transform: uppercase;
-  font-weight: 900;
+  font-weight: 500;
   font-size: 11px;
   line-height: 24px;
   color: white;
@@ -86,6 +85,9 @@
   padding: 0;
   margin: 0;
   list-style: none;
+}
+.storybook .sidebar .component-list ul ul {
+  margin-left: 15px;
 }
 .storybook .sidebar .component-list ul li {
   padding: 8px 0.5rem 0 0.5rem;

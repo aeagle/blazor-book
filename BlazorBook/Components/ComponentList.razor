@@ -1,21 +1,3 @@
 ﻿<Fill class="component-list" scrollable="@true">
-    <h2>Components</h2>
-    <ul>
-        @foreach (var component in BlazorBook.Stories.GetAll())
-        {
-            <li class="@classList(component.Slug)">
-                <button @onclick="@(() => SetCurrentStory(component.Slug))">@component.Name</button>
-            </li>
-        }
-    </ul>
+    <ComponentGroup Group="@BlazorBook.Stories.Root" />
 </Fill>
-
-@code {
-    string classList(string component) => CurrentStory == component ? "active" : "";
-
-    [Parameter]
-    public string CurrentStory { get; set; }
-
-    [CascadingParameter(Name = "SetCurrentStory")]
-    Func<string, Task> SetCurrentStory { get; set; }
-}
