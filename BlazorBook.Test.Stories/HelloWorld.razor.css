@@ -1,6 +1,6 @@
 ﻿.my-component {
     border: 2px dashed red;
     padding: 1em;
-    margin: 1em 0;
+    margin: 1em;
     background-image: url('background.png');
 }

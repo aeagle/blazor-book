@@ -1,0 +1,29 @@
+﻿@if (Group.Name != "Root")
+{
+    <h2>@Group.Name</h2>
+}
+<ul>
+    @foreach (var childGroup in Group.Children)
+    {
+        <ComponentGroup Group="@childGroup" />
+    }
+    @foreach (var component in Group.Components)
+    {
+        <li class="@classList(component.Slug)">
+            <button @onclick="@(() => SetCurrentStory(component.Slug))">@component.Name</button>
+        </li>
+    }
+    </ul>
+
+@code {
+    [Parameter]
+    public BlazorBook.ComponentGroup Group { get; set; }
+
+    string classList(string component) => CurrentStory == component ? "active" : "";
+
+    [CascadingParameter(Name = "CurrentStory")]
+    public string CurrentStory { get; set; }
+
+    [CascadingParameter(Name = "SetCurrentStory")]
+    Func<string, Task> SetCurrentStory { get; set; }
+}

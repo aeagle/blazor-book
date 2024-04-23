@@ -1,21 +1,23 @@
-﻿.storybook {
+.storybook {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 14.4px;
   background: #f6f9fc;
   -webkit-font-smoothing: antialiased;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
   -moz-osx-font-smoothing: grayscale;
 }
 .storybook .main-pane {
   background-color: white;
 }
 .storybook .main-pane .top-bar {
+  background-color: #052767;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: rgba(0, 0, 0, 0.1) 0px -1px 0px 0px;
 }
 .storybook .main-pane .top-bar ul {
+  background-color: rgba(0, 0, 0, 0.4);
   list-style: none;
-  display: inline-block;
+  display: block;
   margin: 0;
   padding: 0;
   display: flex;
@@ -27,7 +29,7 @@
 }
 .storybook .main-pane .top-bar ul li a {
   cursor: pointer;
-  color: #999999;
+  color: white;
   box-sizing: border-box;
   white-space: normal;
   display: inline-flex;
@@ -54,8 +56,8 @@
   user-select: none;
 }
 .storybook .main-pane .top-bar ul li.active a {
-  color: #1ea7fd;
-  border-bottom: 3px solid #1ea7fd;
+  color: white;
+  border-bottom: 3px solid #3a0647;
 }
 .storybook .sidebar {
   background-image: linear-gradient(180deg, #052767 0%, #3a0647 70%);
@@ -72,40 +74,47 @@
   padding: 0 20px;
 }
 .storybook .sidebar .component-list h2 {
-  font-family: "Nunito Sans", sans-serif;
   letter-spacing: 0.35em;
   text-transform: uppercase;
-  font-weight: 900;
-  font-size: 11px;
-  line-height: 24px;
+  font-weight: 500;
+  font-size: 9px;
+  line-height: 18px;
   color: white;
-  margin: 10px 24px 0 24px;
-  padding: 0;
+  margin: 15px 24px 5px 24px;
+  padding: 0 0 0 10px;
+  border-left: 2px solid white;
 }
 .storybook .sidebar .component-list ul {
   padding: 0;
   margin: 0;
   list-style: none;
 }
-.storybook .sidebar .component-list ul li {
-  padding: 8px 0.5rem 0 0.5rem;
+.storybook .sidebar .component-list ul ul {
+  margin-left: 15px;
 }
-.storybook .sidebar .component-list ul li a {
+.storybook .sidebar .component-list ul li {
+  padding: 4px 0.5rem 0 0.5rem;
+}
+.storybook .sidebar .component-list ul li button {
+  text-align: left;
+  display: block;
+  width: 100%;
   border-radius: 4px;
-  display: flex;
   align-items: center;
   cursor: pointer;
   user-select: none;
   color: white;
-  padding: 0 16px;
-  height: 36px;
-  line-height: 36px;
+  padding: 2px 16px;
+  line-height: 22px;
+  background: transparent;
+  border: none;
+  margin: 0;
 }
-.storybook .sidebar .component-list ul li a:hover {
+.storybook .sidebar .component-list ul li button:hover {
   color: white;
   background-color: rgba(255, 255, 255, 0.1);
 }
-.storybook .sidebar .component-list ul li.active a {
+.storybook .sidebar .component-list ul li.active button {
   background-color: rgba(255, 255, 255, 0.1);
   color: white;
 }
