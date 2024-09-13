@@ -5,7 +5,9 @@
 <ul>
     @foreach (var childGroup in Group.Children)
     {
-        <ComponentGroup Group="@childGroup" />
+        <li>
+            <ComponentGroup Group="@childGroup" />
+        </li>
     }
     @foreach (var component in Group.Components)
     {
