@@ -1,5 +1,7 @@
 @page "/blazorbook/story/{id}"
 
+<PageTitle>@BlazorBook.Stories.MetadataByName(Id).Name</PageTitle>
+
 @renderWidget(BlazorBook.Stories.MetadataByName(Id))
 
 @code {
