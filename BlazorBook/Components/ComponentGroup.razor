@@ -5,12 +5,18 @@
 <ul>
     @foreach (var childGroup in Group.Children)
     {
-        <ComponentGroup Group="@childGroup" />
+        <li>
+            <ComponentGroup Group="@childGroup" />
+        </li>
     }
     @foreach (var component in Group.Components)
     {
         <li class="@classList(component.Slug)">
-            <button @onclick="@(() => SetCurrentStory(component.Slug))">@component.Name</button>
+
+            <a href="/blazorbook/story/@component.Slug"
+                @onclick="@(() => SetCurrentStory(component.Slug))"
+                target="frame"
+                >@component.Name</a>
         </li>
     }
     </ul>
